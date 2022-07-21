@@ -18,22 +18,13 @@ const functions = fs.readdirSync("./src/functions").filter(file => file.endsWith
 const eventFiles = fs.readdirSync("./src/events").filter(file => file.endsWith(".js"));
 const commandFolders = fs.readdirSync("./src/commands");
 
-// CommonJs
 
-
-// Declare a route
-
-
-// Run the server!
 
 
 (async () => {
-
-
 server.all('/', (req, res) => {
     res.send('<h2>Server is ready!</h2>');
 });
-
 
     server.listen(4000, () => {
         console.log('Server Ready.');
